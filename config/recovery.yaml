@@ -1,0 +1,14 @@
+behavior_server:
+  ros__parameters:
+    progress_checker_plugin: "progress_checker"
+    goal_checker_plugin: "goal_checker"
+    recovery_plugins: ["spin", "backup", "wait"]
+
+    spin:
+      plugin: "nav2_behaviors/Spin"
+
+    backup:
+      plugin: "nav2_behaviors/BackUp"
+
+    wait:
+      plugin: "nav2_behaviors/Wait"
